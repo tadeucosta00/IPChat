@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.grupos.DetalhesdoGrupo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="158dp"
+        android:layout_height="152dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="84dp"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="#C1C1C1"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/editar"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="124dp"
+        android:background="@drawable/ic_baseline_edit_24"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="#C1C1C1"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/relativeperfil"
+        android:elevation="4dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="81dp"
+            android:text="Perfil"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="141dp"
+            android:src="@drawable/fui_ic_anonymous_white_24dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="148dp"
+            android:text="Membros"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewMembros"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

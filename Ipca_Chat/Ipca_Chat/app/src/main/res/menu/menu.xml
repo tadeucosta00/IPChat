@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/calendarioItem"
+        android:title="Calendario"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/ficehirospartilhadosItem"
+        android:title="Ficheiros Partilhados"
+        android:overlapAnchor="false"
+        android:dropDownVerticalOffset= "-4dp"
+        app:showAsAction="never">
+    </item>
+</menu>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerPerfil">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageVieweditar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="144dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="169dp"
+        android:layout_height="29dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Platafroma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verperfil" />
+
+
+    <RelativeLayout
+        android:id="@+id/verperfil"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icons8_user_30" />
+
+        <TextView
+            android:layout_width="221dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="99dp"
+            android:paddingLeft="10dp"
+            android:text="Ver Perfil"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/terminarsessao"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verplataforma">
+
+        <TextView
+            android:layout_width="221dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="96dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Terminar Sessão"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verplataforma"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icons8_web_50" />
+
+        <TextView
+            android:layout_width="221dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="99dp"
+            android:paddingLeft="10dp"
+            android:text="Ver Plataforma"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

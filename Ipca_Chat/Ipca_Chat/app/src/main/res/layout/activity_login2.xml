@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="79dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="265dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="99dp"
+            android:backgroundTint="@color/white"
+            android:text="Entrar"
+            android:textColor="#0f7548"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="285dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="0dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="285dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="0dp"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="285dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/mensagembalao"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="285dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="82dp"
+            android:layout_marginBottom="98dp"
+            android:background="@drawable/mensagembalao"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/recuperar"
+            android:layout_width="243dp"
+            android:layout_height="37dp"
+            android:layout_above="@+id/button"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginBottom="37dp"
+            android:text="Recuperar creedencias de acesso"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            app:buttonTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        app:srcCompat="@drawable/logo1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

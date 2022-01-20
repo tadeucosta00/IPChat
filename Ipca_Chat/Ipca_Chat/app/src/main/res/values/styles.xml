@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Widget.Theme.Projeto.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+    </style>
+
+    <style name="Widget.Theme.Projeto.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="customActionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+
+    </style>
+
+</resources>

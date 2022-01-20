@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Models.GruposPrivadosSalaChat">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewMensagens"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="#ebebeb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/mensagem1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/enviar"
+            android:background="@drawable/caixadetexto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecyclerViewMensagens"
+            app:layout_constraintVertical_bias="1.0">
+
+            <EditText
+                android:id="@+id/mensagem"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/enviaranexo"
+                android:background="@drawable/caixadetexto"
+                android:ems="10"
+                android:hint="Mensagem"
+                android:inputType="textLongMessage|textMultiLine"
+                android:maxLength="300"
+                android:paddingLeft="13dp"
+                android:paddingRight="10dp"
+                android:scrollHorizontally="false"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/enviaranexo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="14dp"
+                android:layout_toStartOf="@+id/enviarfoto"
+                android:background="@drawable/attach_2_outline" />
+
+            <Button
+                android:id="@+id/enviarfoto"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/camera" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/paper_plane_outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mensagem1" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
